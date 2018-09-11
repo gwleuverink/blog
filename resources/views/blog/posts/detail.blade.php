@@ -1,205 +1,138 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
+@extends('blog.layouts.master')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{  csrf_token() }}">
+@section('content')
+<section class="container post">
+    <article>
+        <header>
+            <h1 class="title">Theme Demo</h1>
+            <h2 class="date">January 8, 2017</h2>
+        </header>
 
-    <title>Willem Leuverink</title>
 
-    <!-- Fonts -->
-    <link href="{{ mix('blog-assets/css/app.css') }}" rel="stylesheet" type="text/css">
-</head>
 
-<body>
-    <main class="wrapper">
-        <nav class="navigation">
-            <section class="container">
+        <h2 id="style-demo">Style Demo</h2>
 
-                <input type="checkbox" id="menu-toggle" />
-                <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-                <ul class="navigation-list">
+        <h1 id="h1-heading">h1 Heading</h1>
 
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="/about/">About</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="/posts/">Blog</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="/projects/">Projects</a>
-                    </li>
+        <h2 id="h2-heading">h2 Heading</h2>
 
+        <h3 id="h3-heading">h3 Heading</h3>
+
+        <h4 id="h4-heading">h4 Heading</h4>
+
+        <h5 id="h5-heading">h5 Heading</h5>
+
+        <h6 id="h6-heading">h6 Heading</h6>
+
+        <hr>
+
+        <p><strong>This is bold text</strong></p>
+
+        <p><strong>This is bold text</strong></p>
+
+        <p><em>This is italic text</em></p>
+
+        <p><em>This is italic text</em></p>
+
+        <p><del>Deleted text</del></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th align="center">Heading</th>
+                    <th align="center">Another heading</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td align="center">text</td>
+                    <td align="center">text</td>
+                </tr>
+
+                <tr>
+                    <td align="center">text</td>
+                    <td align="center">text</td>
+                </tr>
+
+                <tr>
+                    <td align="center">text</td>
+                    <td align="center">text</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote>
+            <p>Block quotes are
+                written like so.</p>
+
+            <p>They can span multiple paragraphs,
+                if you like.</p>
+        </blockquote>
+
+        <p>Some text, and some <code>code</code> and then a nice plain <a href="https://github.com/davidhampgonsalves/davidhampgonsalves.com-hugo"
+                title="title text!">link with title</a>.</p>
+
+        <p>and then</p>
+
+        <ul>
+            <li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+            <li>Sub-lists are made by indenting 2 spaces:
+
+                <ul>
+                    <li>Marker character change forces new list start:</li>
+                    <li>Ac tristique libero volutpat at</li>
                 </ul>
-            </section>
-        </nav>
+            </li>
+            <li>Very easy!</li>
+        </ul>
 
-        <div class="content">
+        <p>vs.</p>
 
-            <section class="container post">
-                <article>
-                    <header>
-                        <h1 class="title">Theme Demo</h1>
-                        <h2 class="date">January 8, 2017</h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+        </ol>
 
+        <h2 id="code">Code</h2>
 
-                        <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
-                            MathJax.Hub.Config({
-                                tex2jax: {
-                                    inlineMath: [['$', '$']],
-                                    displayMath: [['$$', '$$']],
-                                    processEscapes: true,
-                                    processEnvironments: true,
-                                    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-                                    TeX: { extensions: ["AMSmath.js", "AMSsymbols.js"] }
-                                }
-                            });
-                            MathJax.Hub.Queue(function () {
-
-
-
-                                var all = MathJax.Hub.getAllJax(), i;
-                                for (i = 0; i < all.length; i += 1) {
-                                    all[i].SourceElement().parentNode.className += ' has-jax';
-                                }
-                            });
-                        </script>
-
-                    </header>
-
-
-
-                    <h2 id="style-demo">Style Demo</h2>
-
-                    <h1 id="h1-heading">h1 Heading</h1>
-
-                    <h2 id="h2-heading">h2 Heading</h2>
-
-                    <h3 id="h3-heading">h3 Heading</h3>
-
-                    <h4 id="h4-heading">h4 Heading</h4>
-
-                    <h5 id="h5-heading">h5 Heading</h5>
-
-                    <h6 id="h6-heading">h6 Heading</h6>
-
-                    <hr>
-
-                    <p><strong>This is bold text</strong></p>
-
-                    <p><strong>This is bold text</strong></p>
-
-                    <p><em>This is italic text</em></p>
-
-                    <p><em>This is italic text</em></p>
-
-                    <p><del>Deleted text</del></p>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th align="center">Heading</th>
-                                <th align="center">Another heading</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td align="center">text</td>
-                                <td align="center">text</td>
-                            </tr>
-
-                            <tr>
-                                <td align="center">text</td>
-                                <td align="center">text</td>
-                            </tr>
-
-                            <tr>
-                                <td align="center">text</td>
-                                <td align="center">text</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <blockquote>
-                        <p>Block quotes are
-                            written like so.</p>
-
-                        <p>They can span multiple paragraphs,
-                            if you like.</p>
-                    </blockquote>
-
-                    <p>Some text, and some <code>code</code> and then a nice plain <a href="https://github.com/davidhampgonsalves/davidhampgonsalves.com-hugo"
-                            title="title text!">link with title</a>.</p>
-
-                    <p>and then</p>
-
-                    <ul>
-                        <li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
-                        <li>Sub-lists are made by indenting 2 spaces:
-
-                            <ul>
-                                <li>Marker character change forces new list start:</li>
-                                <li>Ac tristique libero volutpat at</li>
-                            </ul>
-                        </li>
-                        <li>Very easy!</li>
-                    </ul>
-
-                    <p>vs.</p>
-
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipiscing elit</li>
-                        <li>Integer molestie lorem at massa</li>
-                    </ol>
-
-                    <h2 id="code">Code</h2>
-
-                    <p>Inline <code>code</code></p>
-                    <div class="highlight">
-                        <pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> foo = <span style="color:#fff;font-weight:bold">function</span> (bar) {
+        <p>Inline <code>code</code></p>
+        <div class="highlight">
+            <pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> foo = <span style="color:#fff;font-weight:bold">function</span> (bar) {
             <span style="color:#fff;font-weight:bold">return</span> bar++;
           };
           
           console.log(foo(<span style="color:#ff0;font-weight:bold">5</span>));
           </code></pre>
-                    </div>
-                </article>
-
-                <br>
-
-
-                <div id="disqus_thread">Disqus comments not available by default when the website is previewed locally.</div>
-                <script type="application/javascript">
-                    var disqus_config = function () {
-
-
-
-                    };
-                    (function () {
-                        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-                            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-                            return;
-                        }
-                        var d = document, s = d.createElement('script'); s.async = true;
-                        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                        powered by Disqus.</a></noscript>
-                <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-            </section>
-
         </div>
+    </article>
 
-    </main>
-    <script src="{{ mix('blog-assets/js/app.js') }}"></script>
-</body>
+    <br>
 
-</html>
+
+    <div id="disqus_thread">Disqus comments not available by default when the website is previewed locally.</div>
+    <script type="application/javascript">
+        var disqus_config = function () {
+
+
+
+        };
+        (function () {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+                return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+            powered by Disqus.</a></noscript>
+    <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</section>
+@endsection
