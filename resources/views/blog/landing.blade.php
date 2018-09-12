@@ -21,10 +21,10 @@
 
         <ul>
             <li><a href="https://github.com/gwleuverink/"><i class="fab fa-github fa-2x"></i></a></li>
-            <li><a href="https://gitlab.com/johndoe/"><i class="fab fa-gitlab fa-2x"></i></a></li>
+            <li><a href="https://gitlab.com/gwleuverink/"><i class="fab fa-gitlab fa-2x"></i></a></li>
             <li><a href="https://twitter.com/gwleuverink/"><i class="fab fa-twitter fa-2x"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/johndoe/"><i class="fab fa-linkedin fa-2x"></i></a></li>
-            <li><a href="https://medium.com/@johndoe"><i class="fab fa-medium fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/gwleuverink/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://medium.com/@gwleuverink"><i class="fab fa-medium fa-2x"></i></a></li>
         </ul>
     </div>
 </section>

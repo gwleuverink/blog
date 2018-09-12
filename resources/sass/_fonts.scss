@@ -1,2 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700);
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+.fab {
+    transition: 300ms ease-in-out;
+    &:hover {
+        color: $secondary_color;
+    }
+}
