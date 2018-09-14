@@ -16,7 +16,7 @@
                     <span class="branding-curly-brackets">}</span>
                 </a>
             </h1>
-            <h2>Web engineer & DevOps enthusiast</h2>
+            <h2>Engineer of webrelated things</h2>
         </div>
 
         <ul>

@@ -5,6 +5,7 @@
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 .fab {
+    color: $fg-color;
     transition: 300ms ease-in-out;
     &:hover {
         color: $secondary_color;
